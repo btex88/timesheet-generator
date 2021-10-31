@@ -22,5 +22,3 @@ function generateDailyTimeShift(startTime, fullShift = 8) {
     endShift,
   ];
 }
-
-console.log(generateDailyTimeShift(8));
