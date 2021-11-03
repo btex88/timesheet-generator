@@ -9,7 +9,7 @@ class Subtitle extends React.Component {
     return (
       <>
         { visibility
-        ? <h2>Seu ponto do dia é</h2>
+        ? <h2 className={styles.subtitle}>Seu ponto do dia é:</h2>
         : <h2 className={styles.subtitle}>Escolha seu padrão de horários</h2>  }
         { visibility
         ? <></>
