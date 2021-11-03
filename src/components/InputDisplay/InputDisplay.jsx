@@ -15,7 +15,7 @@ class InputDisplay extends Component {
         default: 8,
       },
       {
-        name: 'Início pausa (hr/s):',
+        name: 'Início da Pausa (hr/s):',
         label: 'lunchtime',
         min: 0,
         max: 23,
