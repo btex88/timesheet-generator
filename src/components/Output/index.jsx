@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Output.module.css'
+import styles from './index.module.css'
 
 
 class Output extends Component {

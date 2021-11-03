@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Input from '../Input/Input';
-import styles from './InputDisplay.module.css'
+import Input from '../Input';
+import styles from './index.module.css'
 
 class InputDisplay extends Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class InputDisplay extends Component {
         {this.inputs.map((value) => (
           <Input
           key={value.label}
-          {...value}
+          { ...value }
           />
         ))}
       </div>

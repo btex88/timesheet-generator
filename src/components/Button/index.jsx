@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import styles from './Button.module.css'
+import styles from './index.module.css'
 
 class Button extends Component {  
   render() {
     const { label, visibility, callback, } = this.props;
     return (
       <>
-        { visibility
-        ? <></>
-        : <button
+        { visibility || <button
           className={styles.button}
           onClick={ callback }
         >{ label }</button> }
@@ -21,6 +19,7 @@ class Button extends Component {
 Button.propTypes = {
   visibility: PropTypes.bool.isRequired,
   label: PropTypes.string.isRequired,
+  callback: PropTypes.func.isRequired,
 }
 
 export default Button;

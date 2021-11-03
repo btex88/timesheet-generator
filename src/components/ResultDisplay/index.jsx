@@ -1,7 +1,7 @@
 import React from 'react';
-import Output from '../Output/Output';
+import Output from '../Output';
 import { generateTime } from '../../data/data';
-import styles from './ResultDisplay.module.css'
+import styles from './index.module.css';
 
 class ResultDisplay extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Input.module.css'
+import styles from './index.module.css'
 
 class Input extends React.Component {
   constructor(props) {
@@ -43,9 +43,7 @@ class Input extends React.Component {
     const { visibility } = this.props;
     return (
       <>
-        { visibility
-        ? <></>
-        : <div className={styles.container}>
+        { visibility || <div className={styles.container}>
           <span className={styles.labelText}>{this.state.name}</span>
           <select
             className={styles.dropdownMenu}
@@ -68,10 +66,10 @@ class Input extends React.Component {
 Input.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  min: PropTypes.string.isRequired,
-  max: PropTypes.string.isRequired,
-  step: PropTypes.string.isRequired,
-  default: PropTypes.string.isRequired,
+  min: PropTypes.number.isRequired,
+  max: PropTypes.number.isRequired,
+  step: PropTypes.number.isRequired,
+  default: PropTypes.number.isRequired,
 }
 
 export default Input

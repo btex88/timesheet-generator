@@ -1,10 +1,11 @@
 import React from 'react';
-import Title from './components/Title/Title';
-import Subtitle from './components/Subtitle/Subtitle';
-import InputDisplay from './components/InputDisplay/InputDisplay';
-import Button from './components/Button/Button';
-import ResultDisplay from './components/ResultDisplay/ResultDisplay';
+import Title from './components/Title';
+import Subtitle from './components/Subtitle';
+import InputDisplay from './components/InputDisplay';
+import Button from './components/Button';
+import ResultDisplay from './components/ResultDisplay';
 import styles from './App.module.css';
+import Footer from './components/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,17 +37,15 @@ class App extends React.Component {
 
   render() {
     return (
+      <>
       <div className={styles.main}>
         <Title />
         {  this.state.show
-          ? <Subtitle visibility={ this.state.show } />
-          : <Subtitle visibility={ this.state.show } />
-          }
+          || <Subtitle visibility={ this.state.show } /> }
 
         { this.state.show
-          ? <ResultDisplay visibility={ this.state.hide } />
-          : <InputDisplay visibility={ this.state.show } />
-          }
+          ? <ResultDisplay />
+          : <InputDisplay /> }
 
         <Button
           callback={ this.hideComponent }
@@ -66,6 +65,9 @@ class App extends React.Component {
           label={ this.state.reset }
         />
       </div>
+
+      <Footer />
+    </>
     )
   }
 }
