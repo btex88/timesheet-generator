@@ -1,0 +1,32 @@
+.container {
+  min-width: 16rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+.labelText {
+  text-align: center;
+  line-height: 2rem;
+  height: 2rem;
+  width: 13rem;
+}
+
+.dropdownMenu {
+  display: grid;
+  cursor: pointer;
+  text-align: center;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  outline: none;
+  background-color: #FAFAF7;
+}
+
+.dropdownMenu:focus {
+  background-color: #EAF1F4;
+}

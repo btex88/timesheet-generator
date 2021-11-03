@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Input.module.css'
 
 class Input extends React.Component {
   constructor(props) {
@@ -44,9 +45,10 @@ class Input extends React.Component {
       <>
         { visibility
         ? <></>
-        : <div className="container">
-          <label htmlFor={this.state.label}>{this.state.name}</label>
+        : <div className={styles.container}>
+          <span className={styles.labelText}>{this.state.name}</span>
           <select
+            className={styles.dropdownMenu}
             defaultValue={this.state.default}
             onChange={this.handleChange}
           >
