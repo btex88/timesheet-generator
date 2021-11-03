@@ -3,6 +3,10 @@
 }
 
 .main {
+  min-height: 48rem;
+  min-width: 25rem;
+  max-width: 100vw;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -10,5 +14,6 @@
   align-content: center;
   justify-content: center;
   margin: 1rem;
-  background-color: rgb(250, 250, 247)
+  background-color: rgb(250, 250, 247);
+  text-align: center;
 }

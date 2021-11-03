@@ -8,8 +8,12 @@ class Subtitle extends React.Component {
 
     return (
       <>
-        { visibility ? <></> : <h2>Escolha seu padrão de horários</h2>  }
-        { visibility ? <></> : <span>Caso você não selecione nada, o ponto será gerado com base no padrão preestabelecido</span> }
+        { visibility
+        ? <></>
+        : <h2 className={styles.subtitle}>Escolha seu padrão de horários</h2>  }
+        { visibility
+        ? <></>
+        : <span className={styles.text}>Caso você não selecione nada, o ponto será gerado com base no padrão preestabelecido</span> }
       </>
     )
   }
