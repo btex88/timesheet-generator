@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../Subtitle/Subtitle.module.css'
 
 class Subtitle extends React.Component {
   render() {

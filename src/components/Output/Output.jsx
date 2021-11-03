@@ -6,7 +6,7 @@ class Output extends Component {
 
     return (
       <>
-        <div >
+        <div>
           <span>{name}</span>
           <span>{time}</span>
         </div>

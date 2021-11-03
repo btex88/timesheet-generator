@@ -4,7 +4,7 @@ import Subtitle from './components/Subtitle/Subtitle';
 import InputDisplay from './components/InputDisplay/InputDisplay';
 import Button from './components/Button/Button';
 import ResultDisplay from './components/ResultDisplay/ResultDisplay';
-import './App.css';
+import styles from './App.module.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div className={styles.main}>
         <Title />
         {  this.state.show
           ? <Subtitle visibility={ this.state.show } />
@@ -65,7 +65,7 @@ class App extends React.Component {
           visibility={ this.state.hide }
           label={ this.state.reset }
         />
-      </>
+      </div>
     )
   }
 }
