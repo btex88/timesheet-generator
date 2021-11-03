@@ -3,10 +3,9 @@
 }
 
 .main {
-  min-height: 45rem;
-  min-width: 20rem;
-  max-width: 100vw;
-  max-height: (100vh - 3rem);
+  min-height: 25rem;
+  min-width: 18rem;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
