@@ -24,8 +24,15 @@ class ResultDisplay extends React.Component {
   }
 
   render() {
-    const { entree, workday, lunchtime, pause, delay } = this.timeObj
-    const { name } = this.labelObj
+    const {
+      entree,
+      workday,
+      lunchtime,
+      pause,
+      delay
+    } = this.timeObj;
+    
+    const { name } = this.labelObj;
 
     const result = generateTime(
       Number(entree),
