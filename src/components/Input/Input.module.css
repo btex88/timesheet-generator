@@ -1,5 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 .container {
-  min-width: 16rem;
+  min-width: 18rem;
   height: 2rem;
   display: flex;
   justify-content: space-around;
@@ -10,14 +13,12 @@
 }
 
 .labelText {
-  text-align: center;
-  line-height: 2rem;
-  height: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   width: 13rem;
 }
 
 .dropdownMenu {
-  display: grid;
   cursor: pointer;
   text-align: center;
   width: 3rem;
@@ -25,6 +26,11 @@
   border-radius: 0.25rem;
   outline: none;
   background-color: #FAFAF7;
+}
+
+.dropdownMenu:hover {
+  background-color: #D5DADD
+  ;
 }
 
 .dropdownMenu:focus {

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;900&display=swap');
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  font-weight:400;
+  color: #FAFAF7;
+  letter-spacing: 0.125rem;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  appearance: none;
+  background-color: #373F45;
+  border: 2px solid transparent;
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: 
+    all 0.3s 
+    cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button:hover {
+  background-color: #4A545C;
+  box-shadow: rgba(8, 21, 23.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/*
+Button style extracted from:
+https://getcssscan.com/css-buttons-examples
+*/

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
+import styles from './Button.module.css'
 
 class Button extends Component {  
   render() {
@@ -8,7 +9,10 @@ class Button extends Component {
       <>
         { visibility
         ? <></>
-        : <button onClick={ callback }>{ label }</button> }
+        : <button
+          className={styles.button}
+          onClick={ callback }
+        >{ label }</button> }
       </>
     )
   }
