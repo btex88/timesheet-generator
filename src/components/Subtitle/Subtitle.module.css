@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 .subtitle {
+  user-select: none;
+  -webkit-user-select: none;
   font-family: Poppins, sans-serif;
   font-weight: 200;
   text-transform: uppercase;
@@ -10,6 +12,8 @@
 }
 
 .text {
+  user-select: none;
+  -webkit-user-select: none;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
   line-height: 1.5rem;

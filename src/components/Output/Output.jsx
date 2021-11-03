@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import styles from './Output.module.css'
+
 
 class Output extends Component {
   render() {
@@ -6,9 +8,9 @@ class Output extends Component {
 
     return (
       <>
-        <div>
-          <span>{name}</span>
-          <span>{time}</span>
+        <div className={styles.container}>
+          <span className={styles.labelText}>{name}</span>
+          <span className={styles.timeText}>{time}</span>
         </div>
       </>
     )

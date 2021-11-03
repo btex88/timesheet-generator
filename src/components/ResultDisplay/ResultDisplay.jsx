@@ -1,6 +1,7 @@
 import React from 'react';
 import Output from '../Output/Output';
 import { generateTime } from '../../data/data';
+import styles from './ResultDisplay.module.css'
 
 class ResultDisplay extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class ResultDisplay extends React.Component {
       pause,
       delay
     } = this.timeObj;
-    
+
     const { name } = this.labelObj;
 
     const result = generateTime(
@@ -43,7 +44,7 @@ class ResultDisplay extends React.Component {
     );
 
     return (
-      <div>
+      <div className={styles.container}>
         {name.map((value, index) => (
           <Output
             key={ Object.keys(this.timeObj)[index] }
