@@ -64,9 +64,10 @@ class App extends React.Component {
           visibility={ this.state.hide }
           label={ this.state.reset }
         />
+
+        <Footer />
       </div>
 
-      <Footer />
     </>
     )
   }

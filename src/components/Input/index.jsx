@@ -55,7 +55,9 @@ class Input extends React.Component {
                 key={`${this.state.label}-${data}`}
                 value={this.state.label === 'workday' ? data + 5 : data}
                 label={this.state.label === 'workday' ? data += 5 : data}
-              />))}
+              >
+              { this.state.label === 'workday' ? data + 5 : data }
+              </option>))}
           </select>
         </div> }
       </>
