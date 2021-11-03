@@ -34,6 +34,7 @@
   background-color: #CAABD5;
   display: flex;
   font-size: 0.9rem;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
