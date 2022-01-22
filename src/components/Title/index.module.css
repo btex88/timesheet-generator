@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;900&display=swap');
 
-@keyframes blink {
+@keyframes blink-shadow-title {
   0% {
     text-shadow: 5px 5px 10px #373F45;
   }
@@ -19,5 +19,5 @@
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 0.4rem;
-  animation: blink 5s ease-in-out infinite;
+  animation: blink-shadow-title 5s ease-in-out infinite;
 }
